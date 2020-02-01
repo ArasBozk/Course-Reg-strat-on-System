@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>BannerUS | Admin</title>
+    <link rel="stylesheet" href="./css/instructor_Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="picture">
+      <img src="images\dada.jpg"  class="d-block w-100 h-100" >
+      </div>
+    <section id="navBar" >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="admin.html"><img style="max-width:60px; margin-top: -7px;" src="images\kursu.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!--
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Student
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="admin-search.php">Search Courses</a>
+                <a class="dropdown-item" href="admin-reg-win.html">Reg./WD Courses</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Instructor
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="admin-view.php">View Courses</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="admin-create.html">Create New Course</a>
+              </div>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                User
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="admin-delete.html">Create-Delete Courses</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline" action="admin-logout.php" method="post">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="logoutBtn" type="submit">Sign Out</button>
+        </form>
+      </nav>
+    </section>
+
+     
+    
+<div class="page-header">
+    
+       <div class="container">
+     <div class="center">
+     <br>
+    <form action="create-del-people.php" method="post">
+		<div class="form-group">
+           
+         <label for="sel1">Role of user:</label>
+          <select name="regrole" class="form-control" id="sel1">
+            <option>Undergraduate Student</option>
+	  	    <option>Graduate Student</option>
+            <option>Instructor</option>
+         </select>
+	    </div>
+		<div class="form-group">
+		  <label for="uname">Username:</label>
+		  <input type="text" class="form-control"  name="reguser" placeholder="Enter username" >
+		</div>
+		<div class="form-group">
+		  <label for="pwd">Password:</label>
+		  <input type="password" class="form-control"  name="regpass" placeholder="Enter password">
+		</div>
+		<button type="submit" name="registerBtn" class="btn btn-success">Create</button>
+	  </form>
+	</div>
+	<br>
+	<div>
+    <form action="rcreate-del-people.php" method="post">
+		<div class="form-group">
+		  <label for="uname">Enter Username :</label>
+		  <input type="text" class="form-control" placeholder="Enter username" name="deluser">
+		<br>
+		<button type="delete" name="deleteBtn" class="btn btn-danger">Delete</button>
+		</div>
+	  </form>
+	</div>
+      </div>
+    
+      </div>
+    <footer>
+      <p>BannerUS Community University System Solutions,   Copyright &copy; 2017</p>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+
