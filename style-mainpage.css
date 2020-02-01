@@ -1,0 +1,30 @@
+header{
+  border-bottom:#439ec6 3px solid;
+}
+#slider{
+  border-top:#439ec6 3px solid;
+  border-bottom:#439ec6 3px solid;
+}
+.carousel-item
+{
+  height: 60%;
+  width: 100%;
+}
+footer{
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  padding:3px;
+  color:#c0c0c0;
+  background-color:#b22222;
+  text-align: center;
+
+}
+.mr-sm-2{
+  margin-left: 14px;
+}
+.modal {
+    position: fixed;
+    top: 15% !important;
+    left: 50%;
+}
